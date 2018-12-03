@@ -1,0 +1,26 @@
+.content{
+    max-width: 100%;
+    margin: auto;
+}
+
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    height: 60px;
+    background-color: #ff6e40;
+}
+    li{
+        float: right; 
+        color: white;
+        font-weight: bold;               
+    }
+
+    button{        
+        margin-top: 10px;
+    }
+
+.orange-label{    
+    font-family: robotoFont;   
+}

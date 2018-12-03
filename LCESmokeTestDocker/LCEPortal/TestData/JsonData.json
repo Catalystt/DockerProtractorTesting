@@ -1,0 +1,34 @@
+{
+    "Locations": [
+                   "Little Caesars Pizza, Main Street, Saco, Maine, USA",
+                    "Little Caesars Pizza, Park Avenue, Union City, NJ, USA"
+                 ],
+    
+    "StreetAddress": "532 Main St",
+    "FirstName": "LCEPortal",
+    "LastName": "Automation",
+    "LegalEntityName": "Legal",
+    "EmailAddress": "Priyankab2908@gmail.com",
+    "TandConditions" : "Terms and Conditions",
+    "StoreHeading":[
+                       "About Your Store",
+                       "About Your estore"                      
+                   ],    
+    "YearlySales": "400",
+    "StoreSquareFootage": "1251-1500 SqFt",
+    "NumberOfEmployees": "20",
+     "BuildingOwnerOrTenant": "Owner",
+     "PremiumIndicationHeading": "Premium Indication", 
+     "EffectiveDate": "10/20/2018",
+     "AdditionalCoveragesHeading": "Additional Coverages",
+     "ContactInformaionHeading": "Contact Information",
+     "PhoneNumber": "7894561234",
+     "ThankYouHeading": "Thank You",
+     "ValueOfBuilding" : "50000",
+     "YearBuilt" : "1991",
+     "Occupancy" : "75",
+     "userName"  : "Srish.Kumar@cfins.com",
+     "password" : "Flip@2701",
+     "premiumValue" : "$3,000"
+  
+}

@@ -1,0 +1,26 @@
+<div class=nav-primary>
+    <nav class="nav" role="navigation" id="nav">
+        <div class="logo">
+            <!--a href="www.aon.com">
+            <svg width="120px" height="120px"
+        </a-->
+        </div>
+        <ul class="menu">
+            <li>
+                <button mat-button class="black-label">Sign In</button>
+            </li>
+            <li>
+                <button mat-button class="black-label"
+                    [matMenuTriggerFor]="menu">FAQ</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Website FAQ</button>
+                    <button mat-menu-item>Insurance FAQ</button>
+                </mat-menu>
+            </li>
+            <li>
+                <button mat-button class="black-label">Talk to an Agent</button>
+            </li>
+
+        </ul>
+    </nav>
+</div>

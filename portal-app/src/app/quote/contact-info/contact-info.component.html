@@ -1,0 +1,53 @@
+<mat-card class="contact-card" mat-elevation-z8>
+    <mat-card-title>
+        Contact Information
+      </mat-card-title>
+  <mat-card-content>
+
+    <form [formGroup]="firstFormGroup" class="example-form">
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Doing Business As" formControlName="dbaCtrl">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="First Name" formControlName="firstNameCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Last Name" formControlName="lastNameCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Phone" formControlName="phoneCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Email" formControlName="emailCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Mailing Address" formControlName="addressOneCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Address Line 2" formControlName="addressTwoCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="City" formControlName="addressCityCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="State" formControlName="addressStateCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Zip Code" formControlName="addressZipCtrl" required>
+      </mat-form-field>      
+      <mat-form-field>
+        <mat-select placeholder="Payment Plan" formControlName="paymentPlanCtrl" required>
+          <mat-option value="Annual" ng-selected="true">Annual</mat-option>
+          <mat-option value="Monthly">Monthly</mat-option>          
+        </mat-select>
+      </mat-form-field>
+
+    </form>
+
+  </mat-card-content>
+  <mat-card-actions class="delete-button">
+    <button class="submit-btn" mat-raised-button color="accent">SUBMIT</button>
+  </mat-card-actions>
+</mat-card>
+<!--mat-hint>Errors appear instantly!</mat-hint-->

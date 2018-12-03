@@ -1,0 +1,68 @@
+/*.store-container{
+  background-color: #fafafa;
+}*/
+
+div.store-card-list{
+    width: 30%;
+    
+    min-height: 650px;
+    margin: auto;
+}
+
+  .add-button{
+    margin: auto;
+  }
+
+div.information
+{
+  float: right;
+  width: 50%;
+  border-left: 6px solid #ff6e40;  
+  height: 600px;  
+  /*background-color: #9e9e9e;*/
+  margin-right: 50px;
+}
+  .list{
+    margin-top: 150px;
+  }
+    .list-item{
+      margin-left: 50px;
+      /*color: white;*/
+    }
+
+
+
+div.store-container{  
+  min-height: 700px;
+  
+}
+
+.store-card{
+  max-width: 500px;
+  margin: auto;  
+
+}
+  .address-street{
+      width: 100%;
+  }
+
+  .address-state{
+      width: 25%;
+  }
+
+  .address-city{
+      width: 100%;
+  }
+
+  .address-zip{
+      width: 60%;
+      float: right;
+  }
+
+.actions{  
+  margin-left: 500px; 
+  /*background-color: #fafafa;*/
+}
+  button{
+    margin-right: 30px;
+  }

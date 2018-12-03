@@ -1,0 +1,17 @@
+.submit-container{
+    min-height: 400px;
+}
+
+.thank-customer{
+    font-family: robotoFont;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    color: #ff3d00;
+}
+
+.agent-contact{
+    font-family: robotoFont;
+    font-size: 40px;
+    text-align: center;    
+}

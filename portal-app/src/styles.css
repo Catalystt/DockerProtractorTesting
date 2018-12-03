@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";*/
+
+@font-face {
+    font-family: robotoFont;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: robotoFont;
+    src: url('assets/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('assets/fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('assets/fonts/Nunito/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+.mat-tooltip{
+    font-size: 14px !important;
+    font-family: robotoFont;
+}

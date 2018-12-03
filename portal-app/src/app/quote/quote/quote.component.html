@@ -1,0 +1,18 @@
+<quote-menu></quote-menu>
+<div class="quote-container">
+    <mat-horizontal-stepper class="main-stepper" (selectionChange)="onclick($event)" >
+        <mat-step color="accent" label="Your Stores">
+            <quote-store></quote-store>            
+        </mat-step>
+        <mat-step label="Your Coverages">
+            <app-summary></app-summary>
+        </mat-step>
+        <mat-step label="Your Contact Info">
+            <app-contact-info></app-contact-info>
+        </mat-step>
+        <mat-step label="Submit">
+            <app-submit-quote></app-submit-quote>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>
+<quote-footer></quote-footer>

@@ -1,0 +1,16 @@
+.contact-card{
+    max-width: 500px;
+    margin: auto;    
+    /*background-color: #fafafa;*/
+}
+
+.full-width{
+    width: 100%;
+}
+
+.submit-btn{
+    color: white;
+    font-family: robotoFont;
+    font-weight: bold;
+    margin: auto;
+}

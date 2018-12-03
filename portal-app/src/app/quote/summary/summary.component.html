@@ -1,0 +1,126 @@
+<div class="summary-container">
+  <div class="content">
+    <div class="accordion-container">
+      <mat-card class="accordion-card">
+          <mat-card-title>Property Coverage</mat-card-title>
+        <mat-card-content>
+      <div class="store-list" *ngFor="let store of stores; let i = index">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{store.Address1}} {{store.Address2}}
+                <!--Store {{i+1}}-->
+              </mat-panel-title>
+              <mat-panel-description>
+                Expand to see coverage for this store
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <form [formGroup]="propertyGroup" class="example-form">
+              <mat-form-field>
+                <mat-select placeholder="Business Personal Property" matTooltip="This is everything in your store. It includes manufacturing equipment, office furniture and equipment, computers, tablets, cell phones, and vehicles purchased and used by the business, and, basically, everything that isn't &quot;nailed down.&quot;"
+                  matTooltipPosition="right" formControlName="bppCtrl">
+                  <mat-option *ngFor="let option of bpp_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <input matInput placeholder="Deductible" matTooltip="This is the amount you will pay out of pocket for any damages or losses at this store, before we pay your claim."
+                  matTooltipPosition="right" formControlName="deductibleCtrl">
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <input matInput placeholder="Business Income" matTooltip="We will cover up to 12 months of income you miss out on due to damages at this store.  This is included with the standard coverage."
+                matTooltipPosition="right" formControlName="biCtrl" >
+              </mat-form-field>
+              <br>
+              <mat-form-field  matTooltip="Some Franchise Endorsement Description"
+              matTooltipPosition="right">
+                <input matInput placeholder="Franchise Restaurant Coverage Extension" formControlName="franchiseCtrl" disabled >
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-select placeholder="Food Spoilage" formControlName="foodCtrl" matTooltip="We will cover any spoiled food due to equipment failure or power outages up to this amount at this store."
+                matTooltipPosition="right">
+                  <mat-option *ngFor="let option of food_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-select matInput placeholder="Signs" formControlName="signsCtrl" matTooltip="We will cover damage to signs outside of the building at this store up to the selected amount. miss out on due to damages at this store."
+                matTooltipPosition="right">
+                  <mat-option *ngFor="let option of signs_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-select placeholder="Utility Services Direct Damage" formControlName="utilityDamageCtrl" matTooltip="This covers damage to property at this store due to damage caused directly by utility failures."
+                matTooltipPosition="right" >
+                  <mat-option *ngFor="let option of utility_damage_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-select placeholder="Utility Services Time Element" matTooltip="This covers losses you incur over a period of time if your utitilies fail."
+                matTooltipPosition="right">
+                  <mat-option *ngFor="let option of utility_time_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>
+              <mat-form-field  matTooltip="Some equipment breakdown text"
+              matTooltipPosition="right">
+                <input matInput placeholder="Equipment Breakdown" formControlName="equipmentCtrl" disabled>
+              </mat-form-field>
+              <br>
+              <mat-form-field>
+                <mat-select placeholder="Money &amp; Securities" matTooltip="This covers theft or destruction of money while it's in your store."
+                matTooltipPosition="right">
+                  <mat-option *ngFor="let option of money_limit" [value]="option.value">
+                    {{ option.viewValue }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <br>             
+              <mat-form-field>
+                <input matInput placeholder="Building" formControlName="buildingCtrl">
+              </mat-form-field>
+            </form>
+          </mat-expansion-panel>
+        </mat-accordion>
+      
+      </div>
+    </mat-card-content>
+  </mat-card>
+    </div>
+    <div class="general-liability-container">
+      <mat-card class="general-liability-card" mat-elevation-z8>
+        <mat-card-title>General Liability</mat-card-title>
+        <mat-card-content>
+          <table>
+            <tr *ngFor="let i of limits" >
+              <td class="table-row-label">
+                <label for="i.type"> {{i.label}} </label>
+              </td>
+              <td class="table-row-value">
+                <span id="i.type" *ngIf="i.format=='currency'"> {{i.defaultValue | currency:'USD':'$':'1.0-0'}} </span>
+                <span id="i.type" *ngIf="i.format!='currency'"> {{i.defaultValue}} </span>
+              </td>
+            </tr>
+            <br>
+          </table>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<button mat-button (click)="pullsession()">UPDATE</button>

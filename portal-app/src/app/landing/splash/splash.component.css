@@ -1,0 +1,76 @@
+div.background-1{
+    position: relative;
+    opacity: 1.00;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../images/awesome_background.jpeg);
+    min-height: 900px;
+    
+}
+
+div.welcome-window{
+    display: flex;
+}
+
+    .start-quote{        
+        vertical-align: middle;
+    }
+div.welcome{
+    align-content: center;
+    float: right;
+}
+    P{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        width: 300px;
+        float: right;
+        margin-left: 1200px;
+        margin-right: 200px;
+        margin-top: 300px;
+    }
+.start-quote-card{
+    align-content: center;
+    margin-top: 300px;    
+    max-width: 300px;
+    margin-left: 1500px;
+    float: right;
+}
+
+.card-actions{
+    margin: auto;
+}
+
+.start-btn{
+    margin: auto;
+}
+
+div.need-insurance{
+    text-align: center;
+}
+  h2{    
+    font-size: 50px;
+    font-weight: bold;
+    font-family: robotoFont;
+  }
+  div.need-insurance-subtext{
+      font-family: robotoFont;
+      width: 500px;
+      text-align: center;
+      margin: auto;
+  }
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: -100px;
+}
+
+div.crum{
+    font-family: robotoFont;
+    text-align: center;
+    font-size: 12px;
+}

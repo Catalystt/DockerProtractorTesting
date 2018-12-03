@@ -1,0 +1,81 @@
+<div class="store-container">
+  <!--div class="premium">
+    <h1 class="premium">$5000</h1>
+    <mat-slide-toggle class="premium">Annual</mat-slide-toggle>
+  </div-->
+  <!--div class="subtitle-container">
+    <span class="subtitle-icon"><mat-icon>place</mat-icon></span>
+  <span class="subtitle">First, we need details about your stores</span>  
+</div-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--look into this later: https://angular.io/guide/component-interaction putting card into its own component-->
+  <div class="card-container">
+    <div class="store-card-list">
+      <mat-tab-group>
+        <mat-tab label="{{i+1}}" *ngFor="let store of stores; let i=index; trackBy: trackByIndex;">
+          <form class="example-form">
+            <mat-form-field class="address-street">
+              <input matInput [(ngModel)]="store.Address1" placeholder="Street Address" name="store{{i}}.address1" required>
+            </mat-form-field>
+            <mat-form-field class="address-street">
+              <input matInput [(ngModel)]="store.Address2" placeholder="Address Line 2" name="store{{i}}.address2" required>
+            </mat-form-field>
+            <mat-form-field class="address-city">
+              <input matInput [(ngModel)]="store.City" placeholder="City" name="store{{i}}.city" required>
+            </mat-form-field>
+            <mat-form-field class="address-state">
+              <input matInput [(ngModel)]="store.State" placeholder="State" name="store{{i}}.state" required>
+            </mat-form-field>
+            <mat-form-field class="address-zip">
+              <input type="number" matInput [(ngModel)]="store.ZipCode" placeholder="Zip Code" name="store{{i}}.zip" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input type="number" matInput [(ngModel)]="store.Sales" placeholder="Estimated Annual Sales" name="store{{i}}.sales" required matTooltip="How much do you think you'll make in the next 12 months?"
+              matTooltipPosition="right">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+              <input type="number"matInput [(ngModel)]="store.YearBuilt" placeholder="Year Built (YYYY)" name="store{{i}}.year" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+              <input type="number" matInput [(ngModel)]="store.SquareFootage" placeholder="Square Footage" name="store{{i}}.sqft" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+              <mat-select [(ngModel)]="store.BuildingCoverage" placeholder="Building Coverage?" name="store{{i}}.covg" required>
+                <mat-option *ngFor="let option of bldngCovgOptions" [value]="option.value">
+                  {{ option.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          </form>
+          <button mat-raised-button color="warn" (click)="delete_store(store)">DELETE STORE {{i+1}}</button>
+          <button mat-raised-button color="accent" (click)="updateSession()">UPDATE</button>
+          <button mat-raised-button color="accent" (click)="add_store()">ADD STORE</button>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+    <!--div class="information">
+      <mat-list role="list" class="list">
+        <mat-list-item class="list-item" role="listitem">
+          <mat-icon matListIcon>attach_money</mat-icon>
+          Giving us the location of your stores helps us give you the best rate
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <mat-icon matListIcon>show_chart</mat-icon>
+          Telling us your estimated sales for the next year helps us provide accurate coverage
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <mat-icon matListIcon>beach_access</mat-icon>
+          Let's go to the beach </mat-list-item>
+      </mat-list>
+    </div-->
+  </div>
+  <br>
+</div>

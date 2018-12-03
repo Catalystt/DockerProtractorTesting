@@ -1,0 +1,52 @@
+<mat-card class="store-card" mat-elevation-z8>
+    <mat-card-title>
+        Store
+        <!--Store {{i+1}}-->
+      </mat-card-title>
+  <mat-card-content>
+
+    <form [formGroup]="firstFormGroup" class="example-form">
+
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Street Address" formControlName="addressOneCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Address Line 2" formControlName="addressTwoCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="City" formControlName="addressCityCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="State" formControlName="addressStateCtrl" required>
+      </mat-form-field>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Zip Code" formControlName="addressZipCtrl" required>
+      </mat-form-field>
+     
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Estimated Annual Sales" formControlName="salesCtrl" required matTooltip="How much do you think you'll make in the next 12 months?">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Year Built (YYYY)" formControlName="yearBuiltCtrl" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="address-street">
+        <input matInput placeholder="Square Footage" formControlName="sqFtCtrl" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="address-street">
+        <mat-select placeholder="Building Coverage?" formControlName="buildingCovgCtrl" required>
+          <mat-option *ngFor="let option of bldngCovgOptions" [value]="option.value">
+            {{ option.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+    </form>
+
+  </mat-card-content>
+  <mat-card-actions class="delete-button">
+    <button mat-button>DELETE</button>
+  </mat-card-actions>
+</mat-card>

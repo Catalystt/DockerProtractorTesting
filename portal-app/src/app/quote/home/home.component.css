@@ -1,0 +1,57 @@
+.background{
+    width: 100%;
+    margin: auto;
+    height: 1000px;
+    /*background: linear-gradient(180deg, #ff6e40 80%, #ffffff 20%);  */
+    background-color: #ff6e40;
+  }
+
+  .intro-list{
+      margin: auto;
+      vertical-align: middle;      
+      float: left;
+      margin-left: 500px;     
+      border-right: 6px solid white;
+      margin-right: 50px;
+      min-height: 300px;
+  }
+
+  .welcome{
+      color: white;
+      float: left;
+      font-family: robotoFont;
+      margin-left: 370px;
+      font-size: 60px;
+  }
+
+  .list-item{
+    font-family: robotoFont;
+    margin-right: 50px;
+    font-weight: bold;
+  }
+
+  .white-icon{
+      color: white;
+  }
+
+  .search{
+      width: 350px;             
+      font-weight: bold;    
+      color: white;
+      margin-right: 50px;
+  }
+
+  .intro{
+      font-family: robotFont;
+      color: white;
+  }
+
+  .search-form{
+    margin-top: 50px;
+    float: right;
+    margin-right: 500px;
+  }
+
+  .start-button{
+      font-family: robotoFont;
+  }

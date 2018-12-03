@@ -1,0 +1,16 @@
+div.terms-and-conditions{
+  /*  background-color: #ff6e40;    */
+    height: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+    p{
+        font-family: robotoFont;
+        font-size: 12px;
+        text-align: center;
+        width: 60%;
+        /*color: white; */
+        margin-right: auto;
+        margin-left: auto;
+    }
