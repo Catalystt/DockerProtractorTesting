@@ -1,5 +1,5 @@
 # DockerProtractorTesting
-l Docker image for executing headless Google Chrome e2e test cases in a Docker container, allowing for VNC connections to display Chrome GUI.
+Docker image for executing headless Google Chrome e2e test cases in a Docker container, allowing for VNC connections to display Chrome GUI.
 
 # To run your test cases in this image
 1. Pull the `hortonworks/docker-e2e-protractor` image from [DockerHub](https://hub.docker.com/r/hortonworks/docker-e2e-protractor/)
